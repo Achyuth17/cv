@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>💜Achyuth's Personal Site</title>
+  <style>
+    * {
+      background-color: rgb(233, 151, 122);
+    }
+
+    #name {
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    div > p {
+      font-style: italic;
+      font-weight: 300;
+    }
+
+
+    hr + h3 {
+      color:rgb(20, 83, 30);
+      text-decoration: underline;
+    }
+
+    div table {
+      background-color: crimson;
+    }
+
+    .footer {
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+  </style>
 </head>
+
 
 <body>
   <table cellspacing="12">
@@ -13,9 +46,11 @@
         <img src="images/AKK.png" width="145" height="140" alt="Achyuth profile picture">
       </td>
       <td>
-        <h1>Achyuth K Kowshik</h1>
-        <p><i>Student at <strong><a href="https://www.pes.edu/">PES University</a></strong> .</i></p>
-        <p>I am a student who loves to code and i love to challenge myself every single day.</p>
+        <h1 id="name">Achyuth K Kowshik</h1>
+        <div>
+          <p class="description 1"><i>Student at <strong><a href="https://www.pes.edu/">PES University</a></strong> .</i></p>
+          <p class="description 2">I am a student who loves to code and i love to challenge myself every single day.</p>
+        </div>
       </td>
     </tr>
   </table>
@@ -31,6 +66,7 @@
 
   <hr size="2.5"  noshade />
   <h3>Work Experience</h3>
+  <div>
   <table cellspacing="7">
     <thead>
       <tr>
@@ -49,28 +85,33 @@
       </tr>
     </tbody>
   </table>
+</div>
 
   <hr size="2.5"  noshade />
   <h3>Skills</h3>
 
-  <table cellspacing="7">
-    <tr>
-      <td>HTML</td>
-      <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>CSS</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-  </table>
-</body>
-
+  <div>
+    <table cellspacing="7">
+      <tr>
+        <td>HTML</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+    </table>
+  </div>
+  
 <hr size="2.5" noshade>
-<h4><a href="hobbies.html">My Hobbies</a></h4>
-<h4><a href="contact.html">Contact Me</a></h4>
+<footer>
+  <h4 class="footer 1"><a href="hobbies.html">My Hobbies</a></h4>
+  <h4 class="footer 2"><a href="contact.html">Contact Me</a></h4>
+</footer>
 
+</body>
 </html>
